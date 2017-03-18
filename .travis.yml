@@ -4,4 +4,4 @@ language: java
 install: true
 
 script:
-- mvn /provaGitRepo/pom.xml test -B
+- mvn -f /provaGitRepo/pom.xml test
