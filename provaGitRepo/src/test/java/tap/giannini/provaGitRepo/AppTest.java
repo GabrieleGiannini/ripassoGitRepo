@@ -1,28 +1,20 @@
 package tap.giannini.provaGitRepo;
+import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+public class AppTest{
+	
+	private App a;
 
-
-public class AppTest 
-    extends TestCase
-{
-   
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
-
-  
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-  
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+	@Before
+	public void setup(){
+		a = new App();
+	}
+	
+	@Test
+	public void test1(){
+		assertEquals(a.Stringa(),"ciao");
+	}
 }
+    
