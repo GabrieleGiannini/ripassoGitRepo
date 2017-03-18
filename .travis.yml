@@ -4,4 +4,4 @@ language: java
 install: true
 
 script:
-- mvn -f provaGitRepo/pom.xml test
+- mvn -f provaGitRepo/pom.xml clean verify -Pjacoco-report coveralls:report
