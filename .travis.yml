@@ -4,4 +4,4 @@ language: java
 install: true
 
 script:
-- mvn -f com.examples.provaGitRepo/pom.xml clean verify
+- mvn -f provaGitRepo/provaGitRepo/pom.xml clean verify
