@@ -3,5 +3,8 @@ language: java
 #skip installation step
 install: true
 
+jdk:
+- oraclejdk8
+
 script:
 - mvn -f provaGitRepo/pom.xml clean verify -Pjacoco coveralls:report
